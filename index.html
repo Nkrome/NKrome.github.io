@@ -1,1 +1,128 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+<title>HiAvA-Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+dt {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+dd {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">HOME</a>
+    <a href="CAGE.html" class="w3-bar-item w3-button w3-padding-large w3-white">Project 1</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-xxxlarge">Niklas Krome</h1>
+  <p class="w3-xlarge">Social Cognitive Systems at Bielefeld University</p>
+  <a href="https://www.techfak.uni-bielefeld.de/~nkrome/" class="w3-button w3-white w3-padding-large w3-large w3-margin-top">Home Page</a>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h5 class="w3-padding-32"><p>
+								I am a PhD student in the
+								<a href="http://www.techfak.uni-bielefeld.de/ags/soa/"
+									>Social Cognitive Systems Group</a
+								>
+								at
+								<a href="http://www.uni-bielefeld.de">Bielefeld University</a>
+								headed by Prof. Dr.-Ing.
+								<a href=https://www.techfak.uni-bielefeld.de/~skopp/> Stefan Kopp.</a>
+							</p>
+							<p>
+								As part of the
+								<a href="https://scs.techfak.uni-bielefeld.de/research/current-projects/hiava"
+									>HiAvA-Project</a
+								>, I am developing AI-assisted methods to drive gesticulation on virtual agents in a multimodal XR-Cyberspace.
+								My research interests lie in the analysis of human behaviour and its simulation using modern machine learning techniques.
+								My goal is to build an adaptive system, that is able to generate appropriate co-speech gestures in realtime to be deployed in an avatar-based face-to-face interaction scenario,
+								using the modalities available on different platforms.
+							</p></h5>
+    </div>
+
+    <div class="w3-third w3-padding-48 w3-row-padding w3-center">
+      <a><img src="images/nkrome.jpg" class="logo" style="width:400px;height:auto;"/></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h1>News</h1>
+      <h5 class="w3-padding-16"><strong>June 2023:</strong> Our paper "Towards Real-time Co-speech Gesture Generation in Online Interaction in Social XR" was accepted at <a href="https://iva.acm.org/2023/">IVA 2023</a></h5>
+      <h5 class="w3-padding-16"><strong>April 2023:</strong> I presented my work during a poster session on <a href="http://mmsym.org/?page_id=622">MMSYM 2023<a></h5>
+
+  </div>
+</div>
+
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h1>Publications</h1>
+      <h5 class="w3-padding-16">Niklas Krome, Stefan Kopp. (2023). <em>Towards Real-time Co-speech Gesture Generation in Online Interaction in Social XR</em> [<a href="papers/IVA23_Krome_Kopp.pdf">Paper]</a> [<a href="coming-soon">Code]</a> [<a href="coming-soon">Video]</a> [<a href="CAGE.html">Project Page]</a></h5>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.xing.com/profile/Niklas_Krome"><i class="fa fa-xing w3-hover-opacity"></i></a>
+    <a href="https://de.linkedin.com/in/niklas-krome-4b0953118"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+ </div>
+ <p>© 2023 Niklas Krome - Last Updated: 2023-07-20</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

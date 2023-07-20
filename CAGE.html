@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>HiAvA-Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+dt {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+dd {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">HOME</a>
+    <a href="CAGE.html" class="w3-bar-item w3-button w3-padding-large w3-white">Project 1</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-xxxlarge">Towards Real-time Co-speech Gesture Generation in Online Interaction in Social XR</h1>
+  <p class="w3-xlarge"><a href="https://www.techfak.uni-bielefeld.de/~nkrome/">Niklas Krome</a>, <a href="https://www.techfak.uni-bielefeld.de/~skopp/">Stefan Kopp</a></p>
+  <p class="w3-xlarge"><a href="https://iva.acm.org/2023/">23rd ACM International Conference on Intelligent Virtual Agents (IVA23)</a></p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-padding-48 w3-row-padding w3-center">
+      <a><iframe width="660" height="415" src="https://www.youtube.com/embed/VQ8he6jjW08" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h1>Abstract</h1>
+      <h5 class="w3-padding-16">Extended Reality (XR) has a potential to allow social interaction for people that are distant from one another, in educational, clinical or co-working applications, as well as for scientific studies. However, a full-blown embodied social presence and interaction via avatars in XR requires motion tracking hardware that many users do not have. At the same time, modern machine learning approaches enable the synthesis of natural and life-like nonverbal behavior, but only in offline settings and with considerable lag. We evaluate the applicability of current gesture generation systems for online interaction in social XR. We define a set of requirements for real-time-capable gesture generation and propose an approach to employ a state-of-the-art model in a real-time XR interaction pipeline. To test the model under conditions of online interaction, we divide an input audio stream into chunks of different lengths and stitch the resulting gesture animations together to form continuous motion. We evaluate the quality of the resulting multimodal avatar behavior in a user study. Our results show a significant trade-off between real-time generation capabilities and gesture quality. Suggestions for future improvement to retain model performance during online interaction in Social XR are made.</h5>
+
+  </div>
+</div>
+
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content w3-center">
+
+    <a><img src="images/IVA_Process.png" style="width:800px;height:auto;"/></a>
+
+  </div>
+</div>
+
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h1>Video Examples</h1>
+    <div class="w3-center w3-container">
+      <h3>Chunk Sizes</h3>
+      <div class="w3-third">
+        <h4>Ground Truth</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_GT_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>Full Audio</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_60s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>5 seconds</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="w3-third">
+        <h4>2 seconds</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_2s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>1 second</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_1s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>0.5 seconds</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_0,5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+    <div class="w3-center w3-container">
+      <h3>Styles</h3>
+      <div class="w3-col" style="width:45%">
+        <h4>Angry</h4>
+        <video width="95%" controls>
+          <source src="videos/Angry_5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-col" style="width:10%">
+        <div style="margin-top:150px"><h4>5s</h4></div>
+      </div>
+      <div class="w3-col" style="width:45%">
+        <h4>Relaxed</h4>
+        <video width="95%" controls>
+          <source src="videos/Relaxed_5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="w3-col" style="width:45%">
+        <video width="95%" controls>
+          <source src="videos/Angry_0,5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+       <div class="w3-col" text-align="center" style="width:10%">
+        <div style="margin-top:80px"><h4>0.5s</h4></div>
+      </div>
+      <div class="w3-col" style="width:45%">
+        <video width="95%" controls>
+          <source src="videos/Relaxed_0,5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- Fifth Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h3>Bibtex</h3>
+      <h5>@inproceedings{kromekopp2023rtgest,<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;title={Towards Real-time Co-speech Gesture Generation in Online Interaction in Social XR},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;author={Krome, Niklas and Kopp, Stefan},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;booktitle={Proceedings of the ACM International Conference on Intelligent Virtual Agents},<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;year={2023}<br>
+      }
+      </h5>
+
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-xing w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>© 2023 Niklas Krome - Last Updated: 2023-07-20</p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
