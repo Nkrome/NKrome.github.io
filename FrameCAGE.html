@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>HiAvA-Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0
+}
+dt {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+dd {
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-light-grey w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-xxxlarge">Minimal Latency Speech-Driven Gesture Generation for Continuous Interaction in Social XR</h1>
+</header>
+
+<!-- First Grid -->
+
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h1>Abstract</h1>
+      <h5 class="w3-padding-16">Social XR applications usually require advanced
+				tracking equipment to control one’s own avatar. We explore if AIbased
+				co-speech gesture generation techniques can be employed
+				to compensate for the lack of tracking hardware that many
+				users face. One main challenge is to achieve convincing behavior
+				quality without introducing too much latency. Previous work
+				has shown that both depend – in opposite ways – on the
+				length of the audio chunk the gestures are generated from,
+				and that gesture quality of existing models declines with lower
+				chunk sizes while still not reaching sufficiently low latency to
+				enable fluent interaction. In this paper we present an approach
+				that is able to generate continuous gesture trajectories frame
+				by frame, minimizing latency and yielding delays well below
+				buffer sizes of voice communication systems or video calls.</h5>
+
+  </div>
+</div>
+
+
+<!-- Third Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content w3-center">
+		
+		<h1>System Overview</h1>
+		<a><img src="images/Overview.png" style="width:800px;height:auto;"/></a>
+		
+		<h1>Model Architecture</h1>
+    <a><img src="images/Architecture.png" style="width:800px;height:auto;"/></a>
+
+  </div>
+</div>
+
+
+<!-- Fourth Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+
+    <h1>Video Examples</h1>
+    <div class="w3-center w3-container">
+      <h3>Chunk Sizes</h3>
+      <div class="w3-third">
+        <h4>Ground Truth</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_GT_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>Full Audio</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_60s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>0.5s/30f (previous system)</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_0,5s_final.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="w3-third">
+        <h4>20 frames</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_20_frames_final_adjusted - Trim.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>10 frames</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_10_frames_final_adjusted - Trim.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="w3-third">
+        <h4>1 frame</h4>
+        <video width="95%" controls>
+          <source src="videos/Neutral_1_frame_final_adjusted - Trim.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- FIfth Grid -->
+<div class="w3-row-padding w3-white w3-padding-64 w3-container">
+  <div class="w3-content">
+
+		<h1>Results</h1>
+		<div class="w3-center">
+    <a><img src="images/frame_results_1.png" style="width:900px;height:auto;"/></a>
+		<a><img src="images/frame_results_2.png" style="width:700px;height:auto;"/></a>
+		</div>
+
+  </div>
+</div>
+
+
+<!-- Sixth Grid -->
+
+
+<!-- Footer -->
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
